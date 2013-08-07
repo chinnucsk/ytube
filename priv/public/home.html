@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Speak Globally</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/jqtransform.css" rel="stylesheet" type="text/css" />
+    <link href="css/ytube.css" rel="stylesheet" />
+    <link href="css/vast.plugin.css" rel="stylesheet" />
+    <script src="js/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/jquery.jqtransform.js"></script>
+    <script src="js/vast.plugin.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+      $('.checkbox').jqTransform({imgPath:'images/'});
+  }); 
+    </script>
+</head>
+
+<body ng-controller="FVideo" ng-cloak>
+    <header>
+     <div class="container">
+         <span class="logo">Speak Globally</span>
+         <div class="right">
+             <div class="topnav"><a href="#">Login</a> <span class="separator">|</span> <a href="#">Signup</a> <span class="separator">|</span> <a href="#"><img src="images/f-connect.png" align="absmiddle"/></a></div>
+             <div class="searcharea">
+                <input type="text" name="" placeholder="Search..."/>
+                <div class="checkbox left">
+                    <select>
+                        <option value="0">Categories Categories Categories</option>
+                    </select>
+                </div>
+                <input type="Submit" name="" class="search-btn"/>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+
+<div class="navgation">
+    <div class="container">
+        <nav>
+            <a href="/" class="active">Home</a> <span class="separator"></span> <a href="#">Videos</a> <span class="separator"></span> <a href="#">About Us</a> <span class="separator"></span> <a href="#">Contact Us</a>
+        </nav>
+        <div class="navright">
+            <span class="small-icons">
+                <a href="#"><img src="images/fb.png"/></a>
+                <a href="#"><img src="images/twitter.png"/></a>
+                <a href="#"><img src="images/google.png"/></a>
+                <a href="#"><img src="images/blog.png"/></a>
+            </span>
+            <a href="#"><img src="images/upload-videos.png"/></a>
+        </div>
+    </div>
+</div>
+<!--Navgation End-->
+
+<article>
+    <div class="container">
+    	<div class="banner">
+            <SCRIPT TYPE="text/javascript" SRC="http://ad.adserverplus.com/st?ad_type=ad&ad_size=728x90&section=4664482&pub_url=${PUB_URL}">
+            </SCRIPT>
+        </div>
+
+        <div class="contentarea">
+            <aside class="width65">
+            	<div class="featured-videos">
+                    <div class="featured-videos-title">FEATURED VIDEOS</div>
+                    <div class="featured-player-ad-container">
+
+                        <div class="featured-videos-ad-area" id="featured-videos-ad-area" >
+                            <video id="example_video_1" class="video-js vjs-default-skin" autoplay controls preload="auto" width="636" height="359" />
+                        </div>
+                        <div class="featured-videos-player-area" id="featured-videos-player-area" >
+                            <div ng-bind-html-unsafe="homeVideoEmbedPath"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="featured-videos-bt">{{homeVideoTitle}}  ::  <a href="#">The Newyork Times</a></div>
+                    <div class="row">
+                        <span class="left"><img src="images/share-icons.png"/></span>
+                        <span class="right">Rate <img src="images/liles.png" class="margin20_L"/></span>
+                    </div>
+                    <!--FEATURED VIDEOS End-->
+
+                    <div class="gallery-module">
+                         <div class="gallery-title"><span>Newyork Times Videos</span></div>
+                            <div class="row" >
+                             <div class="gallery" ng-repeat="vid in nytFeaturedVideos">
+                                    <div class="videothumb"><a ng-href="/v/{{vid.value[0]}}">
+                                    <img ng-src="{{vid.value[2]}}" /><img src="images/play-icon.png" class="play"/></a></div>
+                                    <a ng-href="/v/{{vid.value[0]}}"><p>{{vid.value[1]}}</p></a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="gallery-module">
+                         <div class="gallery-title"><span>WSJ Videos</span></div>
+                            <div class="row" >
+                             <div class="gallery" ng-repeat="vid in wsjFeaturedVideos">
+                                    <div class="videothumb"><a ng-href="/v/{{vid.value[0]}}">
+                                    <img ng-src="{{vid.value[2]}}" /><img src="images/play-icon.png" class="play"/></a></div>
+                                    <a ng-href="/v/{{vid.value[0]}}"><p>{{vid.value[1]}}</p></a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="gallery-module">
+                         <div class="gallery-title"><span>CBS News Videos</span></div>
+                            <div class="row" >
+                             <div class="gallery" ng-repeat="vid in cbsFeaturedVideos">
+                                    <div class="videothumb"><a ng-href="/v/{{vid.value[0]}}">
+                                    <img ng-src="{{vid.value[2]}}" /><img src="images/play-icon.png" class="play"/></a></div>
+                                    <a ng-href="/v/{{vid.value[0]}}"><p>{{vid.value[1]}}</p></a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="gallery-module">
+                        <div class="gallery-title"><span>America Travel Videos</span></div>
+                        <div class="row">
+                            <div class="gallery">
+                                <p><img src="images/video-1.jpg"/></p>
+                                <p>Destination: India</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-2.jpg"/></p>
+                                <p>Destination: Egypt, Pyramids</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-3.jpg"/></p>
+                                <p>Great Barrier Reef</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="gallery">
+                                <p><img src="images/video-1.jpg"/></p>
+                                <p>Destination: India</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-2.jpg"/></p>
+                                <p>Destination: Egypt, Pyramids</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-3.jpg"/></p>
+                                <p>Great Barrier Reef</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="gallery">
+                                <p><img src="images/video-1.jpg"/></p>
+                                <p>Destination: India</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-2.jpg"/></p>
+                                <p>Destination: Egypt, Pyramids</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-3.jpg"/></p>
+                                <p>Great Barrier Reef</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="gallery">
+                                <p><img src="images/video-1.jpg"/></p>
+                                <p>Destination: India</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-2.jpg"/></p>
+                                <p>Destination: Egypt, Pyramids</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-3.jpg"/></p>
+                                <p>Great Barrier Reef</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="gallery">
+                                <p><img src="images/video-1.jpg"/></p>
+                                <p>Destination: India</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-2.jpg"/></p>
+                                <p>Destination: Egypt, Pyramids</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-3.jpg"/></p>
+                                <p>Great Barrier Reef</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="gallery">
+                                <p><img src="images/video-1.jpg"/></p>
+                                <p>Destination: India</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-2.jpg"/></p>
+                                <p>Destination: Egypt, Pyramids</p>
+                            </div>
+                            <div class="gallery">
+                                <p><img src="images/video-3.jpg"/></p>
+                                <p>Great Barrier Reef</p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="width32 margin20_L">
+                    <div class="rt-tpadd">
+                        <SCRIPT TYPE="text/javascript" SRC="http://ad.adserverplus.com/st?ad_type=ad&ad_size=300x250&section=4664482&pub_url=${PUB_URL}">
+                        </SCRIPT>
+                        <SCRIPT TYPE="text/javascript" SRC="http://ad.adserverplus.com/st?ad_type=ad&ad_size=120x600&section=4664482&pub_url=${PUB_URL}"></SCRIPT>
+                    </div>
+                </aside>
+            </div>
+
+        </div>
+    </article>
+
+    <!--Footer Start-->
+    <footer>
+        <div class="container">
+            <div class="width25">x
+                <h3>VTube</h3>
+                <ul class="social">
+                    <li><a href="#">Follow us on Facebook</a></li>
+                    <li><a href="#" class="twitter">Follow us on Twitter</a></li>
+                    <li><a href="#" class="google">Follow us on Google Plus</a></li>
+                    <li><a href="#" class="blog">Follow us on Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="width20 devider">
+                <h3>Important Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Submission Rules</a></li>
+                    <li><a href="#">House Rules</a></li>
+                    <li><a href="#">AdChoices</a></li>
+                    <li><a href="#">Work With Us</a></li>
+                    <li><a href="#">Advertisers</a></li>
+                </ul>
+            </div>
+
+            <div class="width20 devider">
+                <h3>Your Account</h3>
+                <ul>
+                    <li><a href="#">My Channel</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </div>
+
+            <div class="left devider">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Legal terms</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+    <summary>Copyright &copy; 2013 VTube. All rights reserved.</summary>
+    <script type="text/javascript">
+    var options = {
+        ads: {
+            'skipAd': {
+                'enabled': true,
+                'timeOut': 5
+            },
+            'servers'  : [
+            {
+                'apiAddress' : 'http://localhost:8888/yb-vast.xml'   
+            }
+            ], 
+            'schedule' : [
+            {
+                'position' : 'pre-roll'
+            },
+            {
+                'position' : 'mid-roll',
+                'startTime': '00:00:02'
+            },
+            {
+                'position' : 'post-roll'
+            }
+            ]
+        }
+    };
+    _V_("example_video_1", options);
+    var myPlayer = _V_("example_video_1");
+    var videoEnd = function(){
+        console.log('ended');
+        $("#featured-videos-ad-area").remove();
+        $("#featured-videos-player-area").toggle();
+    };
+    myPlayer.addEvent("ended", videoEnd);
+    </script>
+
+</body>
+</html>

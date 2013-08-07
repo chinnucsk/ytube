@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Speak Globally</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/jqtransform.css" rel="stylesheet" type="text/css" />
+    <link href="/css/ytube.css" rel="stylesheet" />
+    <link href="/css/vast.plugin.css" rel="stylesheet" />
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/controllers.js"></script>
+    <script src="/js/jquery-1.9.1.js"></script>
+    <script src="/js/video.js"></script>
+    <script src="/js/jquery.jqtransform.js"></script>
+    <script src="/js/vast.plugin.js"></script>
+    <script type="text/javascript">
+	    $(function(){
+	      $('.checkbox').jqTransform({imgPath:'images/'});
+	  	}); 
+    </script>
+</head>
+<body ng-controller="SVideo" ng-cloak>
+<header>
+	<div class="container">
+    	<span class="logo">Speak Globally</span>
+        <div class="right">
+        	<div class="topnav"><a href="#">Login</a> <span class="separator">|</span> <a href="#">Signup</a> <span class="separator">|</span> <a href="#"><img src="/images/f-connect.png" align="absmiddle"/></a></div>
+            <div class="searcharea">
+            <input type="text" name="" placeholder="Search..."/>
+            <div class="checkbox left"><select>
+            <option value="0">Categories</option>
+            </select></div>
+            <input type="Submit" name="" class="search-btn"/>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header End-->
+
+<div class="navgation">
+    <div class="container">
+        <nav>
+        <a href="/" class="active">Home</a> <span class="separator"></span> <a href="#">Videos</a> <span class="separator"></span> <a href="#">About Us</a> <span class="separator"></span> <a href="#">Contact Us</a>
+        </nav>
+        <div class="navright">
+            <span class="small-icons">
+                <a href="#"><img src="/images/fb.png"/></a>
+                <a href="#"><img src="/images/twitter.png"/></a>
+                <a href="#"><img src="/images/google.png"/></a>
+                <a href="#"><img src="/images/blog.png"/></a>
+            </span>
+            <a href="#"><img src="/images/upload-videos.png"/></a>
+        </div>
+    </div>
+</div>
+<!--Navgation End-->
+
+<article>
+    <div class="container">
+    	<div class="banner">
+    		<SCRIPT TYPE="text/javascript" SRC="http://ad.adserverplus.com/st?ad_type=ad&ad_size=728x90&section=4664482&pub_url=${PUB_URL}">
+            </SCRIPT>
+    	</div>
+        
+        <div class="contentarea">
+            <div class="featured-videos">
+				<div class="featured-videos-title">FEATURED VIDEOS</div>
+					<aside class="width65">
+						<div class="featured-player-ad-container">
+
+                        <div class="featured-videos-ad-area" id="featured-videos-ad-area" >
+                            <video id="example_video_1" class="video-js vjs-default-skin" autoplay controls preload="auto" width="636" height="359" />
+                        </div>
+                        <div class="featured-videos-player-area" id="featured-videos-player-area" >
+                            <div> {{ embed_path }}</div>
+                        </div>
+                        
+                    </div>
+						<div class="featured-videos-bt">{{ description }} <a href="#">MasTeR Trailers</a></div>
+						<div class="row">
+							<span class="left"><img src="/images/share-icons.png"/></span>
+							<span class="right">Rate <img src="/images/liles.png" class="margin20_L"/></span>
+						</div>
+					</aside>
+					<aside class="width32 margin20_L">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+					</aside>
+			</div>
+			<!--FEATURED VIDEOS End-->
+			
+			
+			<aside class="width65">
+                <div class="gallery-module">
+                	<div class="gallery-title"><span>Asia Travel Videos</span></div>
+                    <div class="row">
+                    	<div class="gallery">
+                            <div class="videothumb"><a href="#"><img src="/images/video-1.jpg"/> <img src="/images/play-icon.png" class="play"/></a></div>
+                            <p>Destination: India</p>
+                        </div>
+                        <div class="gallery">
+                            <div class="videothumb"><a href="#"><img src="/images/video-2.jpg"/> <img src="/images/play-icon.png" class="play"/></a></div>
+                            <p>Destination: Egypt, Pyramids</p>
+                        </div>
+                        <div class="gallery">
+                            <div class="videothumb"><a href="#"><img src="/images/video-3.jpg"/> <img src="/images/play-icon.png" class="play"/></a></div>
+                            <p>Great Barrier Reef</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Asia Travel Videos End-->
+                
+                <div class="gallery-module">
+                	<div class="gallery-title"><span>Europe Travel Videos</span></div>
+                    <div class="row">
+                    	<div class="gallery">
+                            <p><img src="/images/video-1.jpg"/></p>
+                            <p>Destination: India</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-2.jpg"/></p>
+                            <p>Destination: Egypt, Pyramids</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-3.jpg"/></p>
+                            <p>Great Barrier Reef</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-4.jpg"/></p>
+                            <p>The Hajj</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Europe Travel Videos End-->
+                
+                <div class="gallery-module">
+                	<div class="gallery-title"><span>America Travel Videos</span></div>
+                    <div class="row">
+                    	<div class="gallery">
+                            <p><img src="/images/video-1.jpg"/></p>
+                            <p>Destination: India</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-2.jpg"/></p>
+                            <p>Destination: Egypt, Pyramids</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-3.jpg"/></p>
+                            <p>Great Barrier Reef</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-4.jpg"/></p>
+                            <p>The Hajj</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    	<div class="gallery">
+                            <p><img src="/images/video-1.jpg"/></p>
+                            <p>Destination: India</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-2.jpg"/></p>
+                            <p>Destination: Egypt, Pyramids</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-3.jpg"/></p>
+                            <p>Great Barrier Reef</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-4.jpg"/></p>
+                            <p>The Hajj</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    	<div class="gallery">
+                            <p><img src="/images/video-1.jpg"/></p>
+                            <p>Destination: India</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-2.jpg"/></p>
+                            <p>Destination: Egypt, Pyramids</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-3.jpg"/></p>
+                            <p>Great Barrier Reef</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-4.jpg"/></p>
+                            <p>The Hajj</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    	<div class="gallery">
+                            <p><img src="/images/video-1.jpg"/></p>
+                            <p>Destination: India</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-2.jpg"/></p>
+                            <p>Destination: Egypt, Pyramids</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-3.jpg"/></p>
+                            <p>Great Barrier Reef</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-4.jpg"/></p>
+                            <p>The Hajj</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    	<div class="gallery">
+                            <p><img src="/images/video-1.jpg"/></p>
+                            <p>Destination: India</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-2.jpg"/></p>
+                            <p>Destination: Egypt, Pyramids</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-3.jpg"/></p>
+                            <p>Great Barrier Reef</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-4.jpg"/></p>
+                            <p>The Hajj</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    	<div class="gallery">
+                            <p><img src="/images/video-1.jpg"/></p>
+                            <p>Destination: India</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-2.jpg"/></p>
+                            <p>Destination: Egypt, Pyramids</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-3.jpg"/></p>
+                            <p>Great Barrier Reef</p>
+                        </div>
+                        <div class="gallery">
+                            <p><img src="/images/video-4.jpg"/></p>
+                            <p>The Hajj</p>
+                        </div>
+                    </div>
+                </div>
+                <!--America Travel Videos End-->
+                
+                
+            </aside>
+            
+            <aside class="width32 margin20_L">
+            <div class="rt-tpadd">
+            	<SCRIPT TYPE="text/javascript" SRC="http://ad.adserverplus.com/st?ad_type=ad&ad_size=300x250&section=4664482&pub_url=${PUB_URL}">
+                </SCRIPT>
+            </div>
+            
+            <div class="most-popular">
+            	<div class="most-popular-title">Most Popular Travel Videos</div>
+                <div class="row">
+                	<span class="thumb"><img src="/images/most-popular1.jpg"/></span>
+                    <span class="width45">
+                        <p>Destination: India</p>
+                        <p>By <span class="blue">Adam Doker.</span></p>
+                    </span>
+                </div>
+                <div class="row">
+                	<span class="thumb"><img src="/images/most-popular2.jpg"/></span>
+                    <span class="width45">
+                        <p>Bull Fighting</p>
+                        <p>By <span class="blue">Paul D.</span></p>
+                    </span>
+                </div>
+                
+                <div class="row">
+                	<span class="thumb"><img src="/images/most-popular3.jpg"/></span>
+                    <span class="width45">
+                        <p>Gulf of Mexico & Caribbean</p>
+                        <p>By <span class="blue">Ryan Adam.</span></p>
+                    </span>
+                </div>
+                <div class="row">
+                	<span class="thumb"><img src="/images/most-popular4.jpg"/></span>
+                    <span class="width45">
+                        <p>Destination: Egypt, Pyramids</p>
+                        <p>By <span class="blue">Adam Doker.</span></p>
+                    </span>
+                </div>
+                <div class="row">
+                	<span class="thumb"><img src="/images/most-popular3.jpg"/></span>
+                    <span class="width45">
+                        <p>Gulf of Mexico & Caribbean</p>
+                        <p>By <span class="blue">Ryan Adam.</span></p>
+                    </span>
+                </div>
+            </div>
+            <!--Most Popular Travel Videos End-->
+            
+            <div class="rt-btadd margin20_T">
+            	<SCRIPT TYPE="text/javascript" SRC="http://ad.adserverplus.com/st?ad_type=ad&ad_size=300x250&section=4664482&pub_url=${PUB_URL}">
+                </SCRIPT>
+            </div>
+            
+            </aside>
+        </div>
+        
+    </div>
+</article>
+
+<!--Footer Start-->
+<footer>
+	<div class="container">
+        <div class="width25">
+            <h3>VTube</h3>
+            <ul class="social">
+                <li><a href="#">Follow us on Facebook</a></li>
+                <li><a href="#" class="twitter">Follow us on Twitter</a></li>
+                <li><a href="#" class="google">Follow us on Google Plus</a></li>
+                <li><a href="#" class="blog">Follow us on Blog</a></li>
+            </ul>
+        </div>
+        
+        <div class="width20 devider">
+        	<h3>Importent Links</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Submission Rules</a></li>
+                <li><a href="#">House Rules</a></li>
+                <li><a href="#">AdChoices</a></li>
+                <li><a href="#">Work With Us</a></li>
+                <li><a href="#">Advertisers</a></li>
+            </ul>
+        </div>
+        
+        <div class="width20 devider">
+        	<h3>Your Account</h3>
+            <ul>
+                <li><a href="#">My Channel</a></li>
+                <li><a href="#">Subscriptions</a></li>
+                <li><a href="#">Favorites</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </div>
+        
+        <div class="left devider">
+        	<h3>About Us</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Legal terms</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+     
+
+
+   
+        
+    </div>
+</footer>
+<!--Footer End-->
+
+<summary>Copyright &copy; 2013 VTube. All rights reserved.</summary>
+<script type="text/javascript">
+    var options = {
+        ads: {
+            'skipAd': {
+                'enabled': true,
+                'timeOut': 5
+            },
+            'servers'  : [
+            {
+                'apiAddress' : 'http://localhost:8888/yb-vast.xml'   
+            }
+            ], 
+            'schedule' : [
+            {
+                'position' : 'pre-roll'
+            },
+            {
+                'position' : 'mid-roll',
+                'startTime': '00:00:02'
+            },
+            {
+                'position' : 'post-roll'
+            }
+            ]
+        }
+    };
+    _V_("example_video_1", options);
+    var myPlayer = _V_("example_video_1");
+    var videoEnd = function(){
+        console.log('ended');
+        $("#featured-videos-ad-area").remove();
+        $("#featured-videos-player-area").toggle();
+    };
+    myPlayer.addEvent("ended", videoEnd);
+    </script>
+</body>
+</html>
