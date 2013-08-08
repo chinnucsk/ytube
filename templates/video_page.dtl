@@ -82,7 +82,8 @@
 						</div> -->
 					</aside>
 					<aside class="width32 margin20_L">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+					<SCRIPT TYPE="text/javascript" SRC="http://ad.adserverplus.com/st?ad_type=ad&ad_size=300x250&section=4664482&pub_url=${PUB_URL}">
+                    </SCRIPT>
 					</aside>
 			</div>
 			<!--FEATURED VIDEOS End-->
@@ -125,7 +126,7 @@
                 </SCRIPT>
             </div>
             
-            <div class="most-popular">
+            <!-- <div class="most-popular">
             	<div class="most-popular-title">Most Popular Travel Videos</div>
                 <div class="row">
                 	<span class="thumb"><img src="/images/most-popular1.jpg"/></span>
@@ -163,7 +164,7 @@
                         <p>By <span class="blue">Ryan Adam.</span></p>
                     </span>
                 </div>
-            </div>
+            </div> -->
             <!--Most Popular Travel Videos End-->
             
             <div class="rt-btadd margin20_T">
