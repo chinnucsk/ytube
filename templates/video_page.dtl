@@ -19,19 +19,19 @@
 	  	}); 
     </script>
 </head>
-<body ng-controller="SVideo" ng-cloak>
+<body ng-controller="SimilarVideos" ng-cloak>
 <header>
 	<div class="container">
     	<span class="logo">Speak Globally</span>
         <div class="right">
-        	<div class="topnav"><a href="#">Login</a> <span class="separator">|</span> <a href="#">Signup</a> <span class="separator">|</span> <a href="#"><img src="/images/f-connect.png" align="absmiddle"/></a></div>
+        	<!-- <div class="topnav"><a href="#">Login</a> <span class="separator">|</span> <a href="#">Signup</a> <span class="separator">|</span> <a href="#"><img src="/images/f-connect.png" align="absmiddle"/></a></div>
             <div class="searcharea">
             <input type="text" name="" placeholder="Search..."/>
             <div class="checkbox left"><select>
             <option value="0">Categories</option>
             </select></div>
             <input type="Submit" name="" class="search-btn"/>
-            </div>
+            </div> -->
         </div>
     </div>
 </header>
@@ -40,9 +40,9 @@
 <div class="navgation">
     <div class="container">
         <nav>
-        <a href="/" class="active">Home</a> <span class="separator"></span> <a href="#">Videos</a> <span class="separator"></span> <a href="#">About Us</a> <span class="separator"></span> <a href="#">Contact Us</a>
+        <a href="/" class="active">Home</a> <span class="separator"></span> <!-- <a href="#">Videos</a> <span class="separator"></span> --> <a href="#">About Us</a> <span class="separator"></span> <a href="#">Contact Us</a>
         </nav>
-        <div class="navright">
+        <!-- <div class="navright">
             <span class="small-icons">
                 <a href="#"><img src="/images/fb.png"/></a>
                 <a href="#"><img src="/images/twitter.png"/></a>
@@ -50,7 +50,7 @@
                 <a href="#"><img src="/images/blog.png"/></a>
             </span>
             <a href="#"><img src="/images/upload-videos.png"/></a>
-        </div>
+        </div> -->
     </div>
 </div>
 <!--Navgation End-->
@@ -58,8 +58,8 @@
 <article>
     <div class="container">
     	<div class="banner">
-    		<SCRIPT TYPE="text/javascript" SRC="http://ad.adserverplus.com/st?ad_type=ad&ad_size=728x90&section=4664482&pub_url=${PUB_URL}">
-            </SCRIPT>
+            <!--Sizes=2 (width=728, height=90)--> 
+            <script type="text/javascript" src="http://ads1.ministerial5.com/creative/2-002135402-00001j;size=2"></script>
     	</div>
         
         <div class="contentarea">
@@ -67,7 +67,6 @@
 				<div class="featured-videos-title">FEATURED VIDEOS</div>
 					<aside class="width65">
 						<div class="featured-player-ad-container">
-
                         <div class="featured-videos-ad-area" id="featured-videos-ad-area" >
                             <video id="example_video_1" class="video-js vjs-default-skin" autoplay controls preload="auto" width="636" height="359" />
                         </div>
@@ -76,11 +75,11 @@
                         </div>
                         
                     </div>
-						<div class="featured-videos-bt">{{ description }} <a href="#">MasTeR Trailers</a></div>
-						<div class="row">
+						<div class="featured-videos-bt">{{ description }} </div>
+						<!-- <div class="row">
 							<span class="left"><img src="/images/share-icons.png"/></span>
 							<span class="right">Rate <img src="/images/liles.png" class="margin20_L"/></span>
-						</div>
+						</div> -->
 					</aside>
 					<aside class="width32 margin20_L">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
@@ -90,7 +89,7 @@
 			
 			
 			<aside class="width65">
-                <div class="gallery-module">
+                <!-- <div class="gallery-module">
                 	<div class="gallery-title"><span>Asia Travel Videos</span></div>
                     <div class="row">
                     	<div class="gallery">
@@ -107,151 +106,17 @@
                         </div>
                         
                     </div>
-                </div>
-                <!--Asia Travel Videos End-->
-                
-                <div class="gallery-module">
-                	<div class="gallery-title"><span>Europe Travel Videos</span></div>
-                    <div class="row">
-                    	<div class="gallery">
-                            <p><img src="/images/video-1.jpg"/></p>
-                            <p>Destination: India</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-2.jpg"/></p>
-                            <p>Destination: Egypt, Pyramids</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-3.jpg"/></p>
-                            <p>Great Barrier Reef</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-4.jpg"/></p>
-                            <p>The Hajj</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Europe Travel Videos End-->
-                
-                <div class="gallery-module">
-                	<div class="gallery-title"><span>America Travel Videos</span></div>
-                    <div class="row">
-                    	<div class="gallery">
-                            <p><img src="/images/video-1.jpg"/></p>
-                            <p>Destination: India</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-2.jpg"/></p>
-                            <p>Destination: Egypt, Pyramids</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-3.jpg"/></p>
-                            <p>Great Barrier Reef</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-4.jpg"/></p>
-                            <p>The Hajj</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                    	<div class="gallery">
-                            <p><img src="/images/video-1.jpg"/></p>
-                            <p>Destination: India</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-2.jpg"/></p>
-                            <p>Destination: Egypt, Pyramids</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-3.jpg"/></p>
-                            <p>Great Barrier Reef</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-4.jpg"/></p>
-                            <p>The Hajj</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                    	<div class="gallery">
-                            <p><img src="/images/video-1.jpg"/></p>
-                            <p>Destination: India</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-2.jpg"/></p>
-                            <p>Destination: Egypt, Pyramids</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-3.jpg"/></p>
-                            <p>Great Barrier Reef</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-4.jpg"/></p>
-                            <p>The Hajj</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                    	<div class="gallery">
-                            <p><img src="/images/video-1.jpg"/></p>
-                            <p>Destination: India</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-2.jpg"/></p>
-                            <p>Destination: Egypt, Pyramids</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-3.jpg"/></p>
-                            <p>Great Barrier Reef</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-4.jpg"/></p>
-                            <p>The Hajj</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                    	<div class="gallery">
-                            <p><img src="/images/video-1.jpg"/></p>
-                            <p>Destination: India</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-2.jpg"/></p>
-                            <p>Destination: Egypt, Pyramids</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-3.jpg"/></p>
-                            <p>Great Barrier Reef</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-4.jpg"/></p>
-                            <p>The Hajj</p>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                    	<div class="gallery">
-                            <p><img src="/images/video-1.jpg"/></p>
-                            <p>Destination: India</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-2.jpg"/></p>
-                            <p>Destination: Egypt, Pyramids</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-3.jpg"/></p>
-                            <p>Great Barrier Reef</p>
-                        </div>
-                        <div class="gallery">
-                            <p><img src="/images/video-4.jpg"/></p>
-                            <p>The Hajj</p>
-                        </div>
-                    </div>
-                </div>
-                <!--America Travel Videos End-->
-                
-                
+                </div>     -->
+                    <div class="gallery-module">
+                         <div class="gallery-title"><span>More Videos</span></div>
+                            <div class="row" >
+                             <div class="gallery" ng-repeat="vid in noneFeaturedVideos">
+                                    <div class="videothumb"><a ng-href="/v/{% verbatim %}{{vid.value[0]}}{% endverbatim %}">
+                                    <img class = "resizeme" height = "126px" width="190px" ng-src="/{% verbatim %}{{vid.value[2]}}{% endverbatim %}" /><img src="images/play-icon.png" class="play"/></a></div>
+                                    <a ng-href="/v/{% verbatim %}{{vid.value[0]}}{% endverbatim %}"><p>{% verbatim %}{{vid.value[1]}}{% endverbatim %}</p></a>
+                                </div>
+                            </div>
+                    </div>                
             </aside>
             
             <aside class="width32 margin20_L">
@@ -313,7 +178,7 @@
 </article>
 
 <!--Footer Start-->
-<footer>
+<!-- <footer>
 	<div class="container">
         <div class="width25">
             <h3>VTube</h3>
@@ -362,20 +227,20 @@
    
         
     </div>
-</footer>
+</footer> -->
 <!--Footer End-->
 
-<summary>Copyright &copy; 2013 VTube. All rights reserved.</summary>
+<summary>Copyright &copy; 2013 Speak Globally. All rights reserved.</summary>
 <script type="text/javascript">
     var options = {
         ads: {
             'skipAd': {
-                'enabled': true,
+                'enabled': false,
                 'timeOut': 5
             },
             'servers'  : [
             {
-                'apiAddress' : 'http://localhost:8888/yb-vast.xml'   
+                'apiAddress' : 'http://speakglobal.net:8888/yb-vast.xml'   
             }
             ], 
             'schedule' : [

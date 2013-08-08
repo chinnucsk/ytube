@@ -21,3 +21,9 @@ function SVideo($scope, $http){
     $scope.testVal = "Some Testin !!!";
     console.log("Svideo Controller !!");
 }
+
+function SimilarVideos($scope,$http){
+    $http.get('/api/videos/featured_none').success(function(data3) {
+        $scope.noneFeaturedVideos = data3.rows;
+    });
+}
