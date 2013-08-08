@@ -17,6 +17,7 @@ start(_StartType, _StartArgs) ->
 				{"/api/videos/featured_nyt", videos_nyt_featured_handler, []},
                 {"/api/videos/featured_wsj", videos_wsj_featured_handler, []},
                 {"/api/videos/featured_cbs", videos_cbs_featured_handler, []},
+                {"/api/videos/featured_none", videos_non_featured_handler, []},
                 {"/api/videos/home_video", videos_home_video_handler, []}, 
 				{"/api/videos/popular", videos_popular_handler, []},
 				{"/api/videos/most_watched", videos_most_watched_handler, []},

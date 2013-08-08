@@ -8,6 +8,9 @@ function FVideo($scope, $http) {
     $http.get('api/videos/featured_cbs').success(function(data2) {
 	    $scope.cbsFeaturedVideos = data2.rows;
     });
+    $http.get('api/videos/featured_none').success(function(data3) {
+        $scope.noneFeaturedVideos = data3.rows;
+    });
     $http.get('api/videos/home_video').success(function(dat) {
 	    $scope.homeVideoEmbedPath = dat.rows[0].value[2];
 	    $scope.homeVideoTitle = dat.rows[0].value[1];

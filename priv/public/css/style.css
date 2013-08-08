@@ -98,7 +98,7 @@ padding:10px; color:#fff; font-size:18px; margin-bottom:7px;
 .gallery-title {background:url(../images/blue-line.png) repeat-x 0 bottom; height:41px; position:relative;}
 .gallery-title span {background:url(../images/gallery-title.png) no-repeat 0 0; color:#000; font-size:18px; text-align:center; padding:10px 0; height:31px; width:205px; left:0; position:absolute; top:0;}
 
-.gallery {float:left; margin:5px 5px 0 0; width:31%;}
+.gallery {float:left; margin:5px 5px 0 0; width:31%; height: 200px;}
 .videothumb {position:relative;}
 .videothumb a {border:1px solid #ccc; line-height:0; display:inline-block; background:#fff; padding:2px;}
 .videothumb a:hover, .videothumb a.active {border:1px solid #30a4e9;}
