@@ -240,7 +240,7 @@
             },
             'servers'  : [
             {
-                'apiAddress' : 'http://speakglobal.net:8888/yb-vast.xml'   
+                'apiAddress' : 'http://speakglobally.net:8888/yb-vast.xml'   
             }
             ], 
             'schedule' : [
